@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-  <!-- TODO: доверстать блок хедер -->
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
-            <a class="header__link" href="#"> главная</a>
+            <a class="header__link header__link_active" href="#"> главная</a>
           </li>
           <li class="header__links-list-item">
             <a class="header__link" href="#"> посмотреть лоты</a>
@@ -25,22 +24,23 @@
           </li>
         </ul>
       </nav>
-      <img
-        src="./images/logo-black.svg"
-        alt="Логотип сайта"
-        class="header__logo"
-      >
-      <address class="header__contacts">
-        <ul class="header__contacts-list">
+      <a class="header__logo">
+        <img
+          src="./images/logo-black.svg"
+          alt="Логотип сайта"
+          class="header__logo-image"
+        >
+      </a>
+      <address class="address header__address">
+        <ul class="address-list">
           <li>
-            <a class="header__contacts-link" href="tel:+70000000">+9 999 555 5555</a>
-          </li>
-          <br>
-          <li>
-            <a class="header__contacts-link" href="mailto:mail@example.com">info@sobaka.ge</a>
+            <a class="address-list-link header__link" href="tel:+70000000">+9 999 555 5555</a>
           </li>
           <li>
-            <p class="header__contacts-text">наб. Принсенграхт 263-
+            <a class="address-list-link header__link" href="mailto:mail@example.com">info@sobaka.ge</a>
+          </li>
+          <li>
+            <p class="address-list-text">наб. Принсенграхт 263-
               265, Амстердам</p>
           </li>
         </ul>
