@@ -2,14 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link href="./fonts/fonts.css" rel="stylesheet">
+    <link href="./styles/global.css" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet">
   </head>
   <body>
+
+    <!-- Блок header -->
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
@@ -26,9 +28,9 @@
       </nav>
       <a class="header__logo">
         <img
-          src="./images/logo-black.svg"
           alt="Логотип сайта"
           class="header__logo-image"
+          src="./images/logo-black.svg"
         >
       </a>
       <address class="address header__address">
@@ -46,7 +48,9 @@
         </ul>
       </address>
     </header>
+
     <main>
+      <!-- Блок cover -->
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
@@ -60,9 +64,47 @@
           <button class="bet-button" name="submit">Сделать ставку</button>
         </div>
       </section>
-      <section class="lots"></section>
+
+      <!-- Блок lots -->
+      <section class="lots">
+        <h2 class="lots__heading">Лоты</h2>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a class="card-link" href="#">
+              <article class="card card_type_film">
+                <div class="overlay"></div>
+                <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
+                <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+              </article>
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a class="card-link" href="#">
+              <article class="card card_type_book">
+                <div class="overlay"></div>
+                <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
+                <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+              </article>
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a class="card-link" href="#">
+              <article class="card card_type_picture">
+                <div class="overlay"></div>
+                <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+              </article>
+            </a>
+          </li>
+        </ul>
+        <a class="lots__look-more-link" href="#">посмотреть больше</a>
+      </section>
+
+      <!-- Блок about -->
       <section class="about"></section>
     </main>
+
+    <!-- Блок footer -->
     <footer class="footer"></footer>
   </body>
 </html>
