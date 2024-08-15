@@ -7,7 +7,6 @@
 
 .header__links-list {
   display: flex;
-  padding-top: 1px;
   gap: 12px;
 }
 
@@ -56,14 +55,13 @@
 .address-list-link {
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.30;
+  line-height: 1.35;
   color: #000;
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
 }
 
 .address-list-text {
-  padding-top: 1px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.35;
