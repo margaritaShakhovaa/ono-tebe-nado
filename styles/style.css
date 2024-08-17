@@ -27,6 +27,7 @@
   color: #000;
   text-decoration: none;
   border-bottom: 1px solid #000;
+  line-height: 1.35;
 }
 
 .header__link_active {
@@ -43,22 +44,13 @@
 }
 
 .address {
-  width: 240px;
+  max-width: 240px;
   justify-self: end;
   font-style: normal;
 }
 
 .address-list {
   list-style: none;
-}
-
-.address-list-link {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.35;
-  color: #000;
-  text-decoration: none;
-  border-bottom: 1px solid #000;
 }
 
 .address-list-text {
@@ -72,7 +64,7 @@
   position: relative;
   background-image: url('../images/cover.jpg');
   background-position: center;
-  background-size: 1100px 757px;
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -144,8 +136,8 @@
 }
 
 .bet-button {
-  width: 256px;
-  height: 51px;
+  min-width: 256px;
+  min-height: 51px;
   font-family: Raleway, sans-serif;
   font-size: 22px;
   text-transform: uppercase;
